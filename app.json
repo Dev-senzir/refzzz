@@ -1,0 +1,133 @@
+{
+    "name": "𝐒𝐎𝐔𝐑𝐂𝐄 𝐑𝐄𝐅𝐙 𝐌𝐔𝐒𝐈𝐂🜪",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "logo": "https://graph.org/file/6e4359dc87a11152d5951.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Yukki",
+    "YukkiMusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "ضع الايبي ايدي",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "ضع الايبي هاش",
+        "value": "",
+        "required": true
+      },
+      "OWNER": {
+        "description": "ضع هنا يوزر المطور",
+        "value": "IC_X_K",
+        "required": true
+      },
+      "AUTO_LEAVING_ASSISTANT": {
+        "description": "سيبها زي مهيا",
+        "value": "True",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "ضع هنا توكن البوت",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "هتستخرج كود المونجو من هنا https://cloud.mongodb.com",
+        "value": "",
+        "required": false
+      }, 
+      "START_IMG_URL": {
+        "description": "ضع لينك صوره البوت",
+        "value": "",
+        "required": false
+      }, 
+      "BOTID": {
+        "description": "ضع ايدي المطور",
+        "value": "",
+        "required": false
+      },
+      "NAME_BOT": {
+        "description": "حط اسم البوت سواء عربي او انجليزي",
+        "value": "",
+        "required": false
+      },
+      "ID_BOT1": {
+
+        "description": "ضع ايدي البوت",
+          
+        "value": "",
+
+        "required": false
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "ضع هنا اسم البوت بدون زخرفه مثل { REFZ }",
+        "value": "",
+        "required": true
+      },
+      "BOT_USERNAME": {
+        "description": "ضع هنا يوزر البوت  مثل { REFZ_MUSICBOT }",
+        "value": "REFZ_MUSICBOT",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ضع هنا ايدي مطور البوت",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "ضع هنا جلسة البايوجرام",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "ضع هنا اي بي كي الخاص بحساب الهيروكو بتاعك",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "ضع هنا اول اسم كتبتو ف ال app name",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "ضع هنا ايدي الجروب الخاص ب اعدادات البوت",
+        "value": "",
+        "required": true
+      },
+      "UPSTREAM_REPO": {
+        "description": "لاتغيرها",
+        "value": "https://github.com/MA-LR/MD-SU",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "سيبها زي مهيا",
+        "value": "master",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "free"
+          }
+      },
+      "stack": "container"
+  }
